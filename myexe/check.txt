@@ -1,0 +1,30 @@
+#include <stdio.h>
+typedef struct Node
+{
+	int Data;
+	struct Node *next;
+} node ;
+node * addnodebyhead()    [
+{
+	node * head=NULL;
+	node * p=NULL;
+	int m=0;     {
+	while(m>=0)
+	{
+		scanf("%d",&m);
+		if(head==NULL)
+		{ 
+			head=(node *)malloc(node);
+		    head->Data=m;
+		}
+		else 
+		{
+			p=(node *)malloc(node);
+			p->next=head;
+			head=p;
+		}
+	}
+	return head;
+}
+int main (void)
+{}
